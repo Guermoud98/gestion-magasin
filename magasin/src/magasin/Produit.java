@@ -3,7 +3,7 @@ package magasin;
 import java.util.*;
 
 public class Produit {
-	private long id;
+	private int id;
 	private String designation;
 	private int qte;
 	private double prix;

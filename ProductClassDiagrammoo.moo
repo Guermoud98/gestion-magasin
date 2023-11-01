@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{F5DD1022-BDF0-42DC-A98A-A856330F3EDF}" Label="" LastModificationDate="1698869539" Name="ModeleOrienteObjet_1" Objects="46" Symbols="10" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{F5DD1022-BDF0-42DC-A98A-A856330F3EDF}" Label="" LastModificationDate="1698873089" Name="ModeleOrienteObjet_1" Objects="46" Symbols="10" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1577,9 +1577,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>id</a:Code>
 <a:CreationDate>1698615928</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1698615928</a:ModificationDate>
+<a:ModificationDate>1698873089</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
-<a:DataType>long</a:DataType>
+<a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 <a:Static>1</a:Static>
 </o:Attribute>
@@ -1644,11 +1644,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Shortcut>
 <o:Class Id="o18">
 <a:ObjectID>388299F2-8D7A-4C33-A9F4-F5B69C20EE85</a:ObjectID>
-<a:Name>IProduitDaoImplemnt</a:Name>
+<a:Name>IProduitDaoImplement</a:Name>
 <a:Code>Classe_IProduitDao</a:Code>
 <a:CreationDate>1698615949</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1698616139</a:ModificationDate>
+<a:ModificationDate>1698871896</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Operations>
