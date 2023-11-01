@@ -1,5 +1,7 @@
 package magasin;
 
-public class IProduitDaoImplement {
+public class IProduitDaoImplement implements IProduitDao {
+	
+	
 
 }
