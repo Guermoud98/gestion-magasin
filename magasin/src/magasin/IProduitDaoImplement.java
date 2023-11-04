@@ -5,13 +5,9 @@ import java.sql.*;
 public class IProduitDaoImplement implements IProduitDao {
 	
 	//constructor
-	public IProduitDaoImplement() {
-		
-	}
-
+	public IProduitDaoImplement() {}
 	Connection conn= ConnectionDB.getConnexion();
-
-	
+	//adding a produt
 	public void add(Produit p) {
 		try {
 			Statement s = conn.createStatement();
@@ -23,6 +19,17 @@ public class IProduitDaoImplement implements IProduitDao {
 		}
 		
 	}
+	public void delete(int id) {
+	
+		try {
+			Statement s = conn.createStatement();
+			s.executeUpdate("DELETE FROM produit WHERE id = '"+id+"'");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 
 	
 

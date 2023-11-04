@@ -9,6 +9,7 @@ public class App {
 		Produit p1 = new Produit("MacBook",3,2000f,date);
 		IProduitDaoImplement ip = new IProduitDaoImplement();
 		ip.add(p1);
+		ip.delete(2);
 		
 		
 		}
