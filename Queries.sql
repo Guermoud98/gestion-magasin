@@ -5,4 +5,7 @@ CREATE TABLE produit (
 	prix float,
 	date Date
 );
+
+INSERT INTO produit(designation,qte,prix) VALUES ('Iphone11',2,6000);
+UPDATE produit SET date = '2023-04-7' WHERE id = 6;
 SELECT * FROM produit;
