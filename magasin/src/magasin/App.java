@@ -5,12 +5,12 @@ import java.time.LocalDate;
 public class App {
 
 	public static void main(String[] args) {
-		LocalDate date = LocalDate.of(2023, 1, 15);    
-		Produit p1 = new Produit("MacBook",3,2000f,date);
+		LocalDate date = LocalDate.of(2021, 6, 7);    
+		Produit p1 = new Produit("oppo",11,2000f,date);
 		IProduitDaoImplement ip = new IProduitDaoImplement();
-		ip.add(p1);
-		ip.delete(2);
-		
+		//ip.add(p1);
+		//ip.delete(2);
+		System.out.println(ip.getOne(7));
 		
 		}
 

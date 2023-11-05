@@ -19,6 +19,7 @@ public class Produit {
 		this.prix = prix;
 		this.date = date;
 	}
+	public Produit() {};
 	
 	//getters & setters
 	public int getId() {
