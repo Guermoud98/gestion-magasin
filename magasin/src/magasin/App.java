@@ -11,6 +11,7 @@ public class App {
 		//ip.add(p1);
 		//ip.delete(2);
 		System.out.println(ip.getOne(7));
+		System.out.println(ip.getAll());
 		
 		}
 

@@ -54,6 +54,29 @@ public class IProduitDaoImplement implements IProduitDao {
 		}
 		return p;
 	}
+	public List<Produit> getAll() {
+		List<Produit> products = new ArrayList<>();
+		Produit p = null;
+		try {
+			PreparedStatement stmt = conn.prepareStatement("SELECT * FROM produit");
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) {
+				p = new Produit();
+				p.setId(rs.getInt(1));
+				p.setDesignation(rs.getString("designation"));
+				p.setQte(rs.getInt("qte"));
+				p.setPrix(rs.getFloat("prix"));
+				//Converting a java.util.Date to a LocalDate because the setDate method requires a LocalDate parameter.
+				LocalDate d = rs.getDate("date").toLocalDate();
+				p.setDate(d);
+				products.add(p);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return products;
+		
+	}
 	
 
 	
