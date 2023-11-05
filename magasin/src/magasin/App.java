@@ -12,6 +12,7 @@ public class App {
 		//ip.delete(2);
 		System.out.println(ip.getOne(7));
 		System.out.println(ip.getAll());
+		System.out.println(ip.getAll("hp"));
 		
 		}
 
