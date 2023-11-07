@@ -15,6 +15,7 @@ public class Client {
 		this.email = email;
 		this.adresse = adresse;
 	}
+	public Client() {}
 	//getters & setters
 	public String getNom() {
 		return nom;
@@ -46,11 +47,18 @@ public class Client {
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	@Override
 	public String toString() {
 		return "Client [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone + ", email="
 				+ email + ", adresse=" + adresse + "]";
 	}
+
 	
 	
 	

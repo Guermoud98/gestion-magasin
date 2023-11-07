@@ -8,10 +8,12 @@ public class appClient {
 		Client c2 = new Client("Annie","NASSIM","0655445566","test3@gmail.com","QUARTIER El ZEN");
 		Client c4 = new Client("Manel","VENEDY","0697664433","test6@gmail.com","QUARTIER El ROUGE");   
 		IClientDaoImplement im = new IClientDaoImplement();
-		im.add(c1);
-		im.add(c2);
-		im.add(c3);
-		im.add(c4);
+		//im.add(c1);
+		//im.add(c2);
+		//im.add(c3);
+		//im.add(c4);
+		//search method
+		System.out.println(im.search(3));
 
 	}
 
