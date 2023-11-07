@@ -1,4 +1,4 @@
-package magasin;
+package products;
 import java.sql.*;
 public class ConnectionDB {
 	private static Connection conn = null;

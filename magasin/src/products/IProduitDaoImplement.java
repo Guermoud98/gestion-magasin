@@ -1,4 +1,4 @@
-package magasin;
+package products;
 import java.util.*;
 import java.sql.*;
 import java.time.LocalDate;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{F5DD1022-BDF0-42DC-A98A-A856330F3EDF}" Label="" LastModificationDate="1699127480" Name="ModeleOrienteObjet_1" Objects="60" Symbols="15" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{F5DD1022-BDF0-42DC-A98A-A856330F3EDF}" Label="" LastModificationDate="1699389506" Name="ModeleOrienteObjet_1" Objects="44" Symbols="7" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1397,7 +1397,7 @@ Shadow=0</a:DisplayPreferences>
 <o:AssociationSymbol Id="o6">
 <a:CreationDate>1698616105</a:CreationDate>
 <a:ModificationDate>1698869527</a:ModificationDate>
-<a:Rect>((-13876,-2905), (-11702,8120))</a:Rect>
+<a:Rect>((-13876,-2905), (-11739,8120))</a:Rect>
 <a:ListOfPoints>((-13576,-2905),(-13576,8120))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -1439,7 +1439,7 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o13">
 <a:CreationDate>1699127474</a:CreationDate>
 <a:ModificationDate>1699127474</a:ModificationDate>
-<a:Rect>((5090,-3932), (6852,7468))</a:Rect>
+<a:Rect>((5090,-3932), (6477,7468))</a:Rect>
 <a:ListOfPoints>((5390,-3932),(5390,7468))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -2105,7 +2105,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Java</a:Code>
 <a:CreationDate>1698615842</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1698615842</a:ModificationDate>
+<a:ModificationDate>1699389506</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:TargetModelURL>file:///%_OBJLANG%/java5-j2ee14.xol</a:TargetModelURL>
 <a:TargetModelID>0DEDDB90-46E2-45A0-886E-411709DA0DC9</a:TargetModelID>
@@ -2120,7 +2120,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>WSDLJava</a:Code>
 <a:CreationDate>1698615843</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1698615843</a:ModificationDate>
+<a:ModificationDate>1699389506</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:TargetModelURL>file:///%_XEM%/WSDLJ2EE.xem</a:TargetModelURL>
 <a:TargetModelID>C8F5F7B2-CF9D-4E98-8301-959BB6E86C8A</a:TargetModelID>
@@ -2149,6 +2149,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ObjectID>527B2769-05EC-4F76-BE8E-0CCF435B7913</a:ObjectID>
 <a:Name>ModeleOrienteObjet_1</a:Name>
 <a:Code>ModeleOrienteObjet_1</a:Code>
+<a:ExtractionID>6881382</a:ExtractionID>
 <a:CreationDate>1698615963</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
 <a:ModificationDate>1698615963</a:ModificationDate>
