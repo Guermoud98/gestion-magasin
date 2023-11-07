@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{ACBE3343-CF05-4373-AD55-467F163E4507}" Label="" LastModificationDate="1699390169" Name="ModeleOrienteObjet_2" Objects="42" Symbols="7" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{ACBE3343-CF05-4373-AD55-467F163E4507}" Label="" LastModificationDate="1699391498" Name="ModeleOrienteObjet_2" Objects="42" Symbols="7" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1439,7 +1439,7 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o13">
 <a:CreationDate>1699389870</a:CreationDate>
 <a:ModificationDate>1699389870</a:ModificationDate>
-<a:Rect>((8025,-6037), (9448,4088))</a:Rect>
+<a:Rect>((8025,-6037), (9411,4088))</a:Rect>
 <a:ListOfPoints>((8325,-6037),(8324,4088))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -1872,24 +1872,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>IClientDao</a:Code>
 <a:CreationDate>1699388231</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699388529</a:ModificationDate>
+<a:ModificationDate>1699391498</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <a:Classifier.Abstract>1</a:Classifier.Abstract>
-<c:Attributes>
-<o:Attribute Id="o44">
-<a:ObjectID>493B5FEF-2EB8-48F5-B8A5-F6067FDA5AC2</a:ObjectID>
-<a:Name>Attribut_1</a:Name>
-<a:Code>attribut1</a:Code>
-<a:CreationDate>1699388382</a:CreationDate>
-<a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699388438</a:ModificationDate>
-<a:Modifier>Administrateur</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Static>1</a:Static>
-<a:Frozen>F</a:Frozen>
-</o:Attribute>
-</c:Attributes>
 <c:Operations>
 <o:Operation Id="o28">
 <a:ObjectID>75C11094-1BE4-448B-AEB2-CB85258CC8DB</a:ObjectID>
@@ -1902,7 +1888,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:Operation.Abstract>1</a:Operation.Abstract>
 <c:Parameters>
-<o:Parameter Id="o45">
+<o:Parameter Id="o44">
 <a:ObjectID>2F8A0C6C-8A35-44CA-B4B5-54CA89A29612</a:ObjectID>
 <a:Name>cl</a:Name>
 <a:Code>cl</a:Code>
@@ -1932,7 +1918,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Class Ref="o16"/>
 </c:ObjectReturnType>
 <c:Parameters>
-<o:Parameter Id="o46">
+<o:Parameter Id="o45">
 <a:ObjectID>A1D7CC7F-A472-457E-8056-AEEBFAE02190</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -1956,7 +1942,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:Operation.Abstract>1</a:Operation.Abstract>
 <c:Parameters>
-<o:Parameter Id="o47">
+<o:Parameter Id="o46">
 <a:ObjectID>CCAB4C1E-EEC5-4C8C-9BC5-4DB15E3AB6AC</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -1980,7 +1966,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:Operation.Abstract>1</a:Operation.Abstract>
 <c:Parameters>
-<o:Parameter Id="o48">
+<o:Parameter Id="o47">
 <a:ObjectID>8C59A36C-46DA-4E8F-97A9-182C223A2034</a:ObjectID>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
@@ -2073,7 +2059,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Realization>
 </c:Realizations>
 <c:TargetModels>
-<o:TargetModel Id="o49">
+<o:TargetModel Id="o48">
 <a:ObjectID>060D3437-2B39-4ECF-99D3-F9D2CC8134E3</a:ObjectID>
 <a:Name>Java</a:Name>
 <a:Code>Java</a:Code>
@@ -2088,7 +2074,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o50">
+<o:TargetModel Id="o49">
 <a:ObjectID>BE2E4637-7550-496C-9BA8-6A43FC2CC9A2</a:ObjectID>
 <a:Name>WSDL for Java</a:Name>
 <a:Code>WSDLJava</a:Code>

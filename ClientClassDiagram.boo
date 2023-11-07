@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{ACBE3343-CF05-4373-AD55-467F163E4507}" Label="" LastModificationDate="1699389878" Name="ModeleOrienteObjet_2" Objects="42" Symbols="7" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{ACBE3343-CF05-4373-AD55-467F163E4507}" Label="" LastModificationDate="1699390169" Name="ModeleOrienteObjet_2" Objects="42" Symbols="7" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1439,8 +1439,8 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o13">
 <a:CreationDate>1699389870</a:CreationDate>
 <a:ModificationDate>1699389870</a:ModificationDate>
-<a:Rect>((8025,-6037), (9787,4088))</a:Rect>
-<a:ListOfPoints>((8325,-6037),(8325,4088))</a:ListOfPoints>
+<a:Rect>((8025,-6037), (9448,4088))</a:Rect>
+<a:ListOfPoints>((8325,-6037),(8324,4088))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>4194432</a:LineColor>
@@ -1531,7 +1531,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:CreationDate>1699389419</a:CreationDate>
 <a:ModificationDate>1699389603</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((1732,2475), (20990,8243))</a:Rect>
+<a:Rect>((1731,2475), (20991,8243))</a:Rect>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1797,11 +1797,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Class>
 <o:Class Id="o19">
 <a:ObjectID>6C56D6E7-EB1C-40B7-8A58-3ADB86F77C83</a:ObjectID>
-<a:Name>Connection</a:Name>
-<a:Code>Connection</a:Code>
+<a:Name>ConnectionDB</a:Name>
+<a:Code>ConnectionDB</a:Code>
 <a:CreationDate>1699389419</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699389853</a:ModificationDate>
+<a:ModificationDate>1699390169</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
@@ -1820,11 +1820,11 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Operations>
 <o:Operation Id="o41">
 <a:ObjectID>6A8A4AD0-4C54-4DB5-AE18-F2A55CCE4CEF</a:ObjectID>
-<a:Name>Connection</a:Name>
-<a:Code>Connection</a:Code>
+<a:Name>ConnectionDB</a:Name>
+<a:Code>ConnectionDB</a:Code>
 <a:CreationDate>1699389719</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699389853</a:ModificationDate>
+<a:ModificationDate>1699390151</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:Stereotype>Constructor</a:Stereotype>
 <a:Operation.Visibility>-</a:Operation.Visibility>
@@ -1857,13 +1857,10 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>getConnection</a:Code>
 <a:CreationDate>1699389769</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699389865</a:ModificationDate>
+<a:ModificationDate>1699390169</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:ReturnType>Connection</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
-<c:ObjectReturnType>
-<o:Class Ref="o19"/>
-</c:ObjectReturnType>
 </o:Operation>
 </c:Operations>
 </o:Class>
