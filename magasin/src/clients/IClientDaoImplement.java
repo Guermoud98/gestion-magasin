@@ -52,7 +52,17 @@ public class IClientDaoImplement implements IClientDao {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		
+	}
+	public void delete(int id) {
+		try {
+			stmt= conn.prepareStatement("DELETE FROM client WHERE id = ? ");
+			stmt.setInt(1, id);
+			stmt.executeUpdate();
+			System.out.println("Deleted!");
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	
