@@ -14,6 +14,8 @@ public class appClient {
 		//im.add(c4);
 		//search method
 		System.out.println(im.search(3));
+		//modify client's informations
+		im.modify(5, "0638997722", "test@test", "QUARTIEL EL HASSANI");
 
 	}
 

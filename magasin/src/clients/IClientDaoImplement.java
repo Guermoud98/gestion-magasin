@@ -39,6 +39,19 @@ public class IClientDaoImplement implements IClientDao {
 			e.printStackTrace();
 		}
 		return cl;
+	}
+	public void modify(int id, String telephone, String email, String adresse) {
+		try {
+			stmt = conn.prepareStatement("UPDATE client SET telephone = ?, email = ?, adresse = ? WHERE id = ?");
+			stmt.setString(1, telephone);
+			stmt.setString(2, email);
+			stmt.setString(3, adresse);
+			stmt.setInt(4, id);
+			stmt.executeUpdate();
+			System.out.println("Modified!");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
