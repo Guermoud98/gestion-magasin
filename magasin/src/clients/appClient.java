@@ -1,5 +1,7 @@
 package clients;
 
+import java.util.*;
+
 public class appClient {
 
 	public static void main(String[] args) {
@@ -17,7 +19,9 @@ public class appClient {
 		//modify client's information
 		im.modify(5, "0638997722", "test@test", "QUARTIEL EL HASSANI");
 		//Delete a client based on its id
-		im.delete(5);
+		//im.delete(5);
+		//Displaying all clients
+		im.getAll();
 		
 		
 

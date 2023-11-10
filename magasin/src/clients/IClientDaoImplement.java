@@ -1,5 +1,7 @@
 package clients;
 import java.sql.*;
+import java.util.*;
+
 import products.ConnectionDB;
 
 public class IClientDaoImplement implements IClientDao {
@@ -60,6 +62,19 @@ public class IClientDaoImplement implements IClientDao {
 			stmt.executeUpdate();
 			System.out.println("Deleted!");
 			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void getAll() {
+		try {
+			stmt = conn.prepareStatement("SELECT * FROM client");
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) {
+				System.out.println("[id: " + rs.getInt("id") + ", nom: " + rs.getString("nom") +
+						", prenom: " + rs.getString("prenom") + ", adresse: " + rs.getString("adresse")+ 
+						", email: " + rs.getString("email") + ", telephone : " + rs.getString("telephone") + "]");
+			}	
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
