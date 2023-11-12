@@ -8,7 +8,6 @@ CREATE TABLE produit (
 	date Date
 );
 SELECT * FROM produit;
-
 -- Client
 CREATE TABLE Client (
     id int PRIMARY KEY IDENTITY(1,1),
