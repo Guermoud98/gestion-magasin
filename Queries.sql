@@ -18,3 +18,11 @@ CREATE TABLE Client (
 	adresse varchar(20)
 );
 SELECT * FROM client;
+--LigneCommande table
+CREATE TABLE ligneCommande( 
+    id int PRIMARY KEY IDENTITY(1,1),
+	qteVendu float,
+	idProduit int FOREIGN KEY REFERENCES produit(id)
+);
+-- vente table
+

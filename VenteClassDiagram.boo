@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1700431755" Name="ModeleOrienteObjet_1" Objects="58" Symbols="13" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1700431844" Name="ModeleOrienteObjet_1" Objects="58" Symbols="13" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1901,7 +1901,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Classe_IVenteDao</a:Code>
 <a:CreationDate>1699826296</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699826296</a:ModificationDate>
+<a:ModificationDate>1700431844</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Operations>
@@ -2126,7 +2126,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>IVenteDao</a:Code>
 <a:CreationDate>1699820338</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699826287</a:ModificationDate>
+<a:ModificationDate>1700431844</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <a:Classifier.Abstract>1</a:Classifier.Abstract>
@@ -2377,8 +2377,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Realisation_2</a:Code>
 <a:CreationDate>1699826296</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699826296</a:ModificationDate>
+<a:ModificationDate>1700431844</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
+<a:Stereotype>implement</a:Stereotype>
 <c:Object1>
 <o:Interface Ref="o23"/>
 </c:Object1>
