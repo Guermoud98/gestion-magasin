@@ -24,5 +24,12 @@ CREATE TABLE ligneCommande(
 	qteVendu float,
 	idProduit int FOREIGN KEY REFERENCES produit(id)
 );
+SELECT * FROM ligneCommande;
 -- vente table
-
+CREATE TABLE vente (
+    id int,
+	date Date,
+	idLigneCommande int FOREIGN KEY REFERENCES ligneCommande(id),
+	idClient int FOREIGN KEY REFERENCES client(id)
+);
+SELECT * FROM vente;
