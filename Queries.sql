@@ -17,19 +17,28 @@ CREATE TABLE Client (
 	email varchar(20),
 	adresse varchar(20)
 );
-SELECT * FROM client;
+SELECT * FROM Client;
 --LigneCommande table
 CREATE TABLE ligneCommande( 
     id int PRIMARY KEY IDENTITY(1,1),
 	qteVendu float,
 	idProduit int FOREIGN KEY REFERENCES produit(id)
 );
+INSERT INTO ligneCommande(qteVendu, idProduit) VALUES (12, 3); --3 c'est l'id du macBook 
 SELECT * FROM ligneCommande;
 -- vente table
 CREATE TABLE vente (
-    id int,
+    id int PRIMARY KEY IDENTITY(1,1),
 	date Date,
 	idLigneCommande int FOREIGN KEY REFERENCES ligneCommande(id),
-	idClient int FOREIGN KEY REFERENCES client(id)
+	idClient int FOREIGN KEY REFERENCES Client(id)
 );
+INSERT INTO vente(date, idLigneCommande, idClient) VALUES ('2022-01-08', 1, 1);
 SELECT * FROM vente;
+
+-- voici une requête SQL qui récupère les produits d'un client spécifique 
+SELECT p.qte, p.prix, c.nom, c.prenom, l.qteVendu from produit p 
+JOIN ligneCommande l ON l.idProduit=p.id
+JOIN vente v on v.idLigneCommande=l.id
+JOIN Client c on c.id=v.idClient
+

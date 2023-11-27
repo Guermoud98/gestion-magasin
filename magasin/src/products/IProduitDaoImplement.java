@@ -15,7 +15,6 @@ public class IProduitDaoImplement implements IProduitDao {
 		    s.executeUpdate("INSERT INTO produit(designation,qte,prix,date) VALUES ('"+p.getDesignation()+"','"+p.getQte()+"','"+p.getPrix()+"', '"+p.getDate()+"')");
 		    System.out.println("Your product was successfully Added.");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
