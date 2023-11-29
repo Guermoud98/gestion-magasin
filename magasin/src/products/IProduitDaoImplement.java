@@ -53,6 +53,21 @@ public class IProduitDaoImplement implements IProduitDao {
 		}
 		return p;
 	}
+	public int isExistProduct(int id) {
+		try {
+			PreparedStatement stmt = conn.prepareStatement("SELECT * FROM produit WHERE id = ?");
+			stmt.setInt(1,id);
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) {
+				return 1;
+			}
+		
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 	public List<Produit> getAll() {
 		List<Produit> products = new ArrayList<>();
 		Produit p = null;

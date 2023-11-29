@@ -8,6 +8,8 @@ CREATE TABLE produit (
 	date Date
 );
 SELECT * FROM produit;
+UPDATE produit SET designation = 'Iphone13' WHERE id = 4;
+DELETE FROM produit WHERE  id  = 20;
 -- Client
 CREATE TABLE Client (
     id int PRIMARY KEY IDENTITY(1,1),
@@ -18,6 +20,7 @@ CREATE TABLE Client (
 	adresse varchar(20)
 );
 SELECT * FROM Client;
+DELETE FROM Client WHERE  id  IN (9,10,11,12,13,14,15);
 --LigneCommande table
 CREATE TABLE ligneCommande( 
     id int PRIMARY KEY IDENTITY(1,1),
@@ -26,6 +29,7 @@ CREATE TABLE ligneCommande(
 );
 INSERT INTO ligneCommande(qteVendu, idProduit) VALUES (12, 3); --3 c'est l'id du macBook 
 SELECT * FROM ligneCommande;
+DELETE from ligneCommande WHERE id BETWEEN 23 AND 34;
 -- vente table
 CREATE TABLE vente (
     id int PRIMARY KEY IDENTITY(1,1),

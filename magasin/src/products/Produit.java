@@ -5,6 +5,7 @@ import java.time.LocalDate;
 
 public class Produit {
 	private int id;
+	private static int nbr = 0;
 	private String designation;
 	private int qte;
 	private float prix;
@@ -14,6 +15,8 @@ public class Produit {
               int date)
      */
 	public Produit(String designation,int qte,float prix,LocalDate date) {
+		nbr++;
+		id = nbr;
 		this.designation = designation;
 		this.qte = qte;
 		this.prix = prix;
@@ -52,12 +55,13 @@ public class Produit {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-
 	@Override
 	public String toString() {
-		return "Produit [id=" + id + ", designation=" + designation + ", qte=" + qte + ", prix=" + prix + ", date="
+		return "Produit [nbr=" + nbr + ", designation=" + designation + ", qte=" + qte + ", prix=" + prix + ", date="
 				+ date + "]";
 	}
+
+	
 	
 	
 	
