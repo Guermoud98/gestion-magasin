@@ -1,5 +1,7 @@
 package vente;
 import java.sql.*;
+import java.util.*;
+
 import products.ConnectionDB;
 
 public class IVenteDaoImplement implements IVenteDao {
@@ -8,6 +10,7 @@ public class IVenteDaoImplement implements IVenteDao {
 	PreparedStatement stmt = null; 
 	ResultSet rs = null;
 	Vente v = null;
+	List<Vente> venteList = new ArrayList<Vente>();
 	
 	public void add(Vente v) {
 		try {
@@ -36,6 +39,25 @@ public class IVenteDaoImplement implements IVenteDao {
 			e.printStackTrace(); 
 		}
 		return v;
+	}
+	//public List<Vente> display();
+	public List<Vente> display() {
+		try {
+			
+			stmt = conn.prepareStatement("SELECT * FROM vente");
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) {
+				v = new Vente();
+				v.setIdclient(rs.getInt("idClient"));
+				v.setIdLigneCommande(rs.getInt("idLigneCommande"));
+				venteList.add(v);
+				
+			}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return venteList;
 	}
 	
 	

@@ -18,8 +18,8 @@ public class AppVente {
 		IProduitDaoImplement ipProduit = new IProduitDaoImplement();
 		//ipProduit.add(p);
 		LigneCommande l = new LigneCommande(p2, 1);
-		System.out.println(l.getQteVendu());
-		System.out.println(c.getIdClientDB());
+		//System.out.println(l.getQteVendu());
+		//System.out.println(c.getIdClientDB());
 		//System.out.println(p.getId());
 		//System.out.println(l.getPro());
 		//System.out.println(l);
@@ -30,6 +30,7 @@ public class AppVente {
 		IVenteDaoImplement im2 = new IVenteDaoImplement();
 		//im2.add(v);
 		System.out.println(im2.search(31));
+		System.out.println(im2.display());
 		}
 
 }

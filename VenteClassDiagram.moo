@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1701624390" Name="ModeleOrienteObjet_1" Objects="70" Symbols="17" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1701638411" Name="ModeleOrienteObjet_1" Objects="70" Symbols="17" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1754,7 +1754,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Vente</a:Code>
 <a:CreationDate>1699819671</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699827981</a:ModificationDate>
+<a:ModificationDate>1701638411</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
@@ -2006,13 +2006,16 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>search</a:Code>
 <a:CreationDate>1699826296</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699826296</a:ModificationDate>
+<a:ModificationDate>1701638411</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:Stereotype>Implement</a:Stereotype>
-<a:ReturnType>void</a:ReturnType>
+<a:ReturnType>Vente</a:ReturnType>
 <a:Automatic>1</a:Automatic>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 <a:WSDLDataType>void</a:WSDLDataType>
+<c:ObjectReturnType>
+<o:Class Ref="o27"/>
+</c:ObjectReturnType>
 <c:Parameters>
 <o:Parameter Id="o53">
 <a:ObjectID>A10C6F5D-D131-461C-AA0F-8C38D5452BA5</a:ObjectID>
@@ -2314,10 +2317,13 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>search</a:Code>
 <a:CreationDate>1699820372</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1699820418</a:ModificationDate>
+<a:ModificationDate>1701638411</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
-<a:ReturnType>void</a:ReturnType>
+<a:ReturnType>Vente</a:ReturnType>
 <a:Operation.Abstract>1</a:Operation.Abstract>
+<c:ObjectReturnType>
+<o:Class Ref="o27"/>
+</c:ObjectReturnType>
 <c:Parameters>
 <o:Parameter Id="o77">
 <a:ObjectID>F0A93EFA-472A-4BCA-A8B3-ECAEEECD478A</a:ObjectID>
