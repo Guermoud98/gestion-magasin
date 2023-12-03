@@ -15,12 +15,14 @@ public class Vente {
 	private LigneCommande ligneCommande;
 	private Client cl;
 	private int idLigneFromDB;
+	private int idClientDB;
 	Connection conn = ConnectionDB.getConnexion();
 	//constructor
 	public Vente(LocalDate date, LigneCommande ligneCommande, Client cl) {
 		this.date = date;
 		this.ligneCommande = ligneCommande;
 		this.cl = cl;
+		this.idClientDB = cl.getIdClientDB();
 		//extracting the id of a specific ligneCommande if it is already present in our DB.
 		try {
 			PreparedStatement stmt = conn.prepareStatement("SELECT * FROM ligneCommande WHERE idProduit  = ?");
@@ -35,6 +37,12 @@ public class Vente {
 		}
 	}
 	
+	
+	public Vente() {
+
+	}
+
+
 	public Client getCl() {
 		return cl;
 	}
@@ -68,9 +76,26 @@ public class Vente {
 	public void setIdLigneFromDB(int idLigneFromDB) {
 		this.idLigneFromDB = idLigneFromDB;
 	}
-	public String toString() {
-		return "[Vente n " + id + ": date : " + date + ", LigneCommandeId: " + ligneCommande.getId() + ", idClient" 
-				+ cl.getId() + "]";
+	public int getIdclient() {
+		return cl.getIdClientDB();
 	}
+	public int getIdLigneCommande() {
+		return ligneCommande.getIdProFromDB()
+	}
+	public void setIdclient(int id) {
+		cl = new Client();
+		cl.setId(id);
+	}
+	public void setIdLigneCommande(int id) {
+		ligneCommande = new LigneCommande();
+		ligneCommande.setIdProFromDB(id);
+	}
+
+
+	@Override
+	public String toString() {
+		return "Vente [ligneCommandeId=" + ligneCommande.getIdProFromDB() + ", idClient=" + cl.getId() +"]";
+	}
+	
 	
 }

@@ -21,6 +21,12 @@ public class LigneCommande {
 		this.qteVendu = qteVendu;
 		idProFromDB = pro.getIdProFromDB();
 	}
+	
+
+		public LigneCommande() {
+	
+	}
+
 
 		//Getters & Setters
 		public Produit getPro() {
@@ -47,8 +53,11 @@ public class LigneCommande {
 			this.idProFromDB = idProFromDB;
 		}
 
+
 		@Override
 		public String toString() {
-			return "LigneCommande [id=" + id + ", pro=" + pro.toString() + ", qteVendu=" + qteVendu + "]";
+			return "LigneCommande [qteVendu=" + qteVendu + ", idProduitFromDB=" + idProFromDB + "]";
 		}
+
+		
 }
