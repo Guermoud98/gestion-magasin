@@ -31,6 +31,7 @@ public class AppVente {
 		//im2.add(v);
 		System.out.println(im2.search(31));
 		System.out.println(im2.display());
+		im2.modify(29, 100);
 		}
 
 }

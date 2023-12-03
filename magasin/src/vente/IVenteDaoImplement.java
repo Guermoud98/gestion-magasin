@@ -40,7 +40,6 @@ public class IVenteDaoImplement implements IVenteDao {
 		}
 		return v;
 	}
-	//public List<Vente> display();
 	public List<Vente> display() {
 		try {
 			
@@ -58,6 +57,17 @@ public class IVenteDaoImplement implements IVenteDao {
 			e.printStackTrace();
 		}
 		return venteList;
+	}
+	//public void modify(int id);
+	public void modify(int id, int idLigneCommande) {
+		try {
+			stmt = conn.prepareStatement("UPDATE vente SET idLigneCommande = ? WHERE id = ?");
+			stmt.setInt(1, id);
+			stmt.setInt(2, idLigneCommande);
+			stmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	
