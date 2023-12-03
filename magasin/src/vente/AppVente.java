@@ -31,7 +31,8 @@ public class AppVente {
 		//im2.add(v);
 		System.out.println(im2.search(31));
 		System.out.println(im2.display());
-		im2.modify(29, 100);
+		im2.modify(29, 100);//doesnt work because we don't have in the LigneCommande table the id 100
+		im2.delete(33);
 		}
 
 }

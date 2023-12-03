@@ -7,7 +7,7 @@ public interface IVenteDao {
 	public Vente search(int id);
 	public List<Vente> display();
 	public void modify(int idvente, int idLigneCommande);
-	//public void delete(int id);
+	public void delete(int id);
 	//public double TotalLigneCommande(List<LigneCommande> ligneC);
 	//public boolean isExistLigneComm(LigneCommande ligneC);
 	

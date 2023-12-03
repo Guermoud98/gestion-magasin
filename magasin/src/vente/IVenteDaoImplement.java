@@ -58,7 +58,6 @@ public class IVenteDaoImplement implements IVenteDao {
 		}
 		return venteList;
 	}
-	//public void modify(int id);
 	public void modify(int id, int idLigneCommande) {
 		try {
 			stmt = conn.prepareStatement("UPDATE vente SET idLigneCommande = ? WHERE id = ?");
@@ -69,7 +68,17 @@ public class IVenteDaoImplement implements IVenteDao {
 			e.printStackTrace();
 		}
 	}
-	
+	//public void delete(int id);
+	public void delete(int id) {
+		try {
+			stmt = conn.prepareStatement("DELETE FROM vente WHERE id = ?");
+			stmt.setInt(1, id);
+			stmt.executeUpdate();
+			System.out.println("Sale Deleted!");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 
 }
