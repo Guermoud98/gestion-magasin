@@ -11,8 +11,8 @@ public class IVenteDaoImplement implements IVenteDao {
 		try {
 			stm = conn.prepareStatement("INSERT INTO vente(idLigneCommande, idClient) VALUES (?,?)");
 			//stm.setDate(1, v.getDate());
-			stm.setInt(1, v.getLigneCommande().getId());
-			stm.setInt(2, v.getCl().getId());
+			stm.setInt(1, v.getIdLigneFromDB());
+			stm.setInt(2, v.getCl().getIdClientDB());
 			stm.executeUpdate();
 			
 		} catch (Exception e) {
@@ -22,6 +22,7 @@ public class IVenteDaoImplement implements IVenteDao {
 		
 		
 	}
+	
 	
 
 }

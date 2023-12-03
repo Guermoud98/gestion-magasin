@@ -1,6 +1,7 @@
 package products;
 
 import java.util.*;
+import java.sql.*;
 import java.time.LocalDate;
 
 public class Produit {
@@ -10,17 +11,28 @@ public class Produit {
 	private int qte;
 	private float prix;
 	private LocalDate date;
+	private int idProFromDB;
+	Connection conn = ConnectionDB.getConnexion();
 	/* public Date(int year,
               int month,
               int date)
      */
 	public Produit(String designation,int qte,float prix,LocalDate date) {
-		nbr++;
-		id = nbr;
 		this.designation = designation;
 		this.qte = qte;
 		this.prix = prix;
 		this.date = date;
+		try {
+			PreparedStatement stmt = conn.prepareStatement("SELECT * FROM produit Where designation = ?");
+			stmt.setString(1,  designation);
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) {
+				this.idProFromDB = rs.getInt("id");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	public Produit() {};
 	
@@ -54,6 +66,13 @@ public class Produit {
 	}
 	public void setDate(LocalDate date) {
 		this.date = date;
+	}
+	
+	public int getIdProFromDB() {
+		return idProFromDB;
+	}
+	public void setIdProFromDB(int idProFromDB) {
+		this.idProFromDB = idProFromDB;
 	}
 	@Override
 	public String toString() {

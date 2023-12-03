@@ -20,7 +20,7 @@ CREATE TABLE Client (
 	adresse varchar(20)
 );
 SELECT * FROM Client;
-DELETE FROM Client WHERE  id  IN (9,10,11,12,13,14,15);
+DELETE FROM Client WHERE  id  = 8;
 --LigneCommande table
 CREATE TABLE ligneCommande( 
     id int PRIMARY KEY IDENTITY(1,1),
@@ -29,7 +29,7 @@ CREATE TABLE ligneCommande(
 );
 INSERT INTO ligneCommande(qteVendu, idProduit) VALUES (12, 3); --3 c'est l'id du macBook 
 SELECT * FROM ligneCommande;
-DELETE from ligneCommande WHERE id BETWEEN 23 AND 34;
+DELETE from ligneCommande WHERE id = 40 ;
 -- vente table
 CREATE TABLE vente (
     id int PRIMARY KEY IDENTITY(1,1),

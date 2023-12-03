@@ -1,5 +1,9 @@
 package clients;
 
+import java.sql.*;
+
+import products.ConnectionDB;
+
 public class Client {
 	private int id;
 	private String nom;
@@ -7,6 +11,9 @@ public class Client {
 	private String telephone;
 	private String email;
 	private String adresse;
+	private int idClientDB;
+	Connection conn = ConnectionDB.getConnexion();
+	
 	//constructor
 	public Client(String nom, String prenom, String telephone, String email, String adresse) {
 		this.nom = nom;
@@ -14,7 +21,20 @@ public class Client {
 		this.telephone = telephone;
 		this.email = email;
 		this.adresse = adresse;
+		//extracting the id of a specific client if it is already present in our DB.
+		try {
+			PreparedStatement stm = conn.prepareStatement("SELECT * FROM client");
+			ResultSet rs = stm.executeQuery();
+			while(rs.next()) {
+				this.idClientDB = rs.getInt("id");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
+
 	public Client() {}
 	//getters & setters
 	public String getNom() {
@@ -52,6 +72,12 @@ public class Client {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public int getIdClientDB() {
+		return idClientDB;
+	}
+	public void setIdClientDB(int idClientDB) {
+		this.idClientDB = idClientDB;
 	}
 	@Override
 	public String toString() {

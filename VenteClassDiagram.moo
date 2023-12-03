@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1701034016" Name="ModeleOrienteObjet_1" Objects="75" Symbols="21" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1701624390" Name="ModeleOrienteObjet_1" Objects="70" Symbols="17" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1418,7 +1418,7 @@ Shadow=0</a:DisplayPreferences>
 <o:AssociationSymbol Id="o10">
 <a:CreationDate>1701033996</a:CreationDate>
 <a:ModificationDate>1701033996</a:ModificationDate>
-<a:Rect>((-5911,18698), (249,26281))</a:Rect>
+<a:Rect>((-5948,18698), (249,26281))</a:Rect>
 <a:ListOfPoints>((249,26281),(249,22406),(-4074,22406),(-4074,18698))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>8</a:ArrowStyle>
@@ -2181,11 +2181,11 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Class>
 <o:Class Id="o35">
 <a:ObjectID>9BC58AFD-36BB-403B-9777-E9B30E328692</a:ObjectID>
-<a:Name>Classe_ILigneCommande</a:Name>
+<a:Name>ILigneCommandeImpelement</a:Name>
 <a:Code>Classe_ILigneCommande</a:Code>
 <a:CreationDate>1701033967</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1701034016</a:ModificationDate>
+<a:ModificationDate>1701624390</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Operations>
@@ -2674,7 +2674,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>WSDLJava</a:Code>
 <a:CreationDate>1699819650</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1700519801</a:ModificationDate>
+<a:ModificationDate>1701602046</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:TargetModelURL>file:///%_XEM%/WSDLJ2EE.xem</a:TargetModelURL>
 <a:TargetModelID>C8F5F7B2-CF9D-4E98-8301-959BB6E86C8A</a:TargetModelID>

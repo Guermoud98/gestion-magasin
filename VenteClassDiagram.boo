@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1701034005" Name="ModeleOrienteObjet_1" Objects="75" Symbols="21" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{41271A7A-0054-48B2-81C4-EF71B67B4A5F}" Label="" LastModificationDate="1701034016" Name="ModeleOrienteObjet_1" Objects="75" Symbols="21" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1397,7 +1397,7 @@ Shadow=0</a:DisplayPreferences>
 <o:GeneralizationSymbol Id="o6">
 <a:CreationDate>1701033967</a:CreationDate>
 <a:ModificationDate>1701033984</a:ModificationDate>
-<a:Rect>((-20318,27284), (5101,36917))</a:Rect>
+<a:Rect>((-20318,27284), (5101,37504))</a:Rect>
 <a:ListOfPoints>((-20318,30343),(-20318,36917),(5101,36917),(5101,27284))</a:ListOfPoints>
 <a:CornerStyle>2</a:CornerStyle>
 <a:ArrowStyle>7</a:ArrowStyle>
@@ -2185,7 +2185,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Classe_ILigneCommande</a:Code>
 <a:CreationDate>1701033967</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1701033967</a:ModificationDate>
+<a:ModificationDate>1701034016</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Operations>
@@ -2459,7 +2459,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>ILigneCommande</a:Code>
 <a:CreationDate>1701033470</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1701033614</a:ModificationDate>
+<a:ModificationDate>1701034016</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <a:Classifier.Abstract>1</a:Classifier.Abstract>
@@ -2641,8 +2641,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>Realisation_3</a:Code>
 <a:CreationDate>1701033967</a:CreationDate>
 <a:Creator>Administrateur</a:Creator>
-<a:ModificationDate>1701033967</a:ModificationDate>
+<a:ModificationDate>1701034016</a:ModificationDate>
 <a:Modifier>Administrateur</a:Modifier>
+<a:Stereotype>implement</a:Stereotype>
 <c:Object1>
 <o:Interface Ref="o34"/>
 </c:Object1>
