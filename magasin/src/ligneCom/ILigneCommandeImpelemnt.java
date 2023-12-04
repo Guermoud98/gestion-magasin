@@ -11,12 +11,13 @@ public class ILigneCommandeImpelemnt implements ILigneCommande{
 		return prixVente*qte;
 	}
 	public void add(LigneCommande l) {
-		PreparedStatement stm ;
+		PreparedStatement stmt ;
 		try {
-			stm = conn.prepareStatement("INSERT INTO ligneCommande(qteVendu, idProduit) VALUES (?,?)");
-			stm.setDouble(1, l.getQteVendu());
-			stm.setInt(2, l.getIdProFromDB());
-			stm.executeUpdate();
+			stmt = conn.prepareStatement("INSERT INTO ligneCommande(qteVendu, idProduit, sousTotal) VALUES (?,?,?)");
+			stmt.setDouble(1, l.getQteVendu());
+			stmt.setInt(2, l.getIdProFromDB());
+			stmt.setDouble(3, l.getQteVendu()*l.getPro().getPrix());
+			stmt.executeUpdate();
 			
 		}catch (Exception e) {
 			e.printStackTrace();

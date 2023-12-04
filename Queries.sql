@@ -29,7 +29,7 @@ CREATE TABLE ligneCommande(
 );
 INSERT INTO ligneCommande(qteVendu, idProduit) VALUES (12, 3); --3 c'est l'id du macBook 
 SELECT * FROM ligneCommande;
-DELETE from ligneCommande WHERE id = 40 ;
+DELETE from ligneCommande WHERE id = 62;
 -- vente table
 CREATE TABLE vente (
     id int PRIMARY KEY IDENTITY(1,1),
@@ -39,7 +39,7 @@ CREATE TABLE vente (
 );
 INSERT INTO vente(date, idLigneCommande, idClient) VALUES ('2022-01-08', 1, 1);
 SELECT * FROM vente;
-
+DELETE from vente WHERE id = 23;
 -- voici une requête SQL qui récupère les produits d'un client spécifique 
 SELECT p.qte, p.prix, c.nom, c.prenom, l.qteVendu from produit p 
 JOIN ligneCommande l ON l.idProduit=p.id

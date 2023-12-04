@@ -1,6 +1,7 @@
 package vente;
 
 import java.util.*;
+import ligneCom.LigneCommande;
 
 public interface IVenteDao {
 	public void add(Vente v);
@@ -8,7 +9,7 @@ public interface IVenteDao {
 	public List<Vente> display();
 	public void modify(int idvente, int idLigneCommande);
 	public void delete(int id);
-	//public double TotalLigneCommande(List<LigneCommande> ligneC);
+	public double TotalLigneCommande(List<LigneCommande> ligneC);
 	//public boolean isExistLigneComm(LigneCommande ligneC);
 	
 	
